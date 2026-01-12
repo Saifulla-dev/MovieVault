@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>editPage</title>
+</head>
+<body>
+<div align="center">
+
+<br><br>
+<form action="updateData" method="post">
+<input type="hidden" name="id" th:value="${list.id}">
+<h3>MOVIE NAME : <input type=text name="name" th:value="${list.name}"> </h3>
+<h3>MOVIE RATING : <input type=number name="rating" th:value="${list.rating}"> </h3>
+<h3>MOVIE GENRE : <input type=text name="genre" th:value="${list.genre}"> </h3>
+<h3>MOVIE IMG : <input type=text name="imgLink" th:value="${list.imgLink}"> </h3>
+
+<button>UPDATE</button>
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>mainPage</title>
+<style>
+body{
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80vh;
+}
+
+</style>
+</head>
+<body>
+<div align="center">
+<h1>MOVIES</h1>
+
+<a href="/addData"><button><h2>ADD MOVIE RECORD</h2></button></a> 
+
+<a href="/manage"><button><h2>MANAGE MOVIE RECORDS</h2></button></a>
+
+</div>
+
+<script th:if="${message}">
+alert("[[${message}]]");
+</script>
+
+</body>
+</html>
